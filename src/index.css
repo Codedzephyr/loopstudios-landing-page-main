@@ -1,0 +1,14 @@
+/* bring in normalize.css */
+@import-normalize;
+@import url(https://fonts.googleapis.com/css?family=Alata:regular);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic);
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
+}

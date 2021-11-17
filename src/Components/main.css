@@ -1,0 +1,147 @@
+:root {
+  --black: hsl(0, 0%, 0%);
+  --DarkGray: hsl(0, 0%, 55%);
+  --VeryDarkGray: hsl(0, 0%, 41%);
+  --white: hsl(0, 0%, 100%);
+  --fontSize: 18px;
+  --fontWeight4: 400;
+  --fontWeight3: 300;
+}
+
+header.navigation-bar {
+  background-image: url(../images/desktop/image-hero.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  background-position: top;
+  height: calc(80vh - 12.8px);
+}
+
+nav {
+  margin: 0 auto;
+  display: flex;
+  width: 90%;
+  min-height: calc(12vh - 12.8px);
+}
+
+div.header-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+div.links-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: var(--fontWeight3);
+  color: var(--white);
+  font-size: var(--fontSize);
+  justify-content: space-around;
+}
+
+.nav-links-mobile {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: var(--fontWeight3);
+  color: var(--white);
+  font-size: var(--fontSize);
+  justify-content: space-around;
+}
+
+li.nav-links-item {
+  list-style: none;
+}
+
+li.nav-links-item > a {
+  color: var(--white);
+  font-size: var(--fontSize);
+  text-decoration: none;
+  font-weight: var(--fontWeight4);
+}
+
+li.nav-links-item > a:hover {
+  text-decoration: white;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+p {
+  display: none;
+}
+
+div.logo-container {
+  display: flex;
+}
+
+div.navbar-brand-container {
+  flex: 1;
+}
+
+div.navigation-icons-container {
+  flex: 1;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+/* for tablet and mobile phones */
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  div.links-container-close {
+    display: none;
+    
+  }
+
+  header.navigation-bar{
+    background-color: var(--black);
+    background-image: none;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links-mobile {
+    flex-direction: column;
+    padding: 1rem 0rem;
+  }
+
+  svg.hamburger {
+    display: block;
+    float: right;
+  }
+
+  ul > li.nav-links-item {
+    padding: 0.7rem 0rem;
+  }
+
+  li.nav-links-item > a {
+    text-transform: uppercase;
+    font-weight: var(--fontWeight4);
+    letter-spacing: 2px;
+  }
+  div.logo-container {
+    width: 100%;
+  }
+  div.header-container {
+    margin-top: 1.4rem;
+  }
+  svg.hamburger {
+    margin-top: 0.4rem;
+  }
+}
