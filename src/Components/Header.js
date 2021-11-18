@@ -3,15 +3,32 @@ import "./main.css";
 
 const Header = () => {
   const [isDisplayNavigationLinksDisplay, setIsNavigationLinksDisplay] =
-    useState(false);
+    useState(true);
+  const [HamburgerDisplay, setHamburgerDisplay] = useState(false);
+  const [closeButton, setCloseButton] = useState(false);
+  const [backgroundColor, setBackgroundColor] = useState(true);
+  const [textContainerAppear, setTextContainerAppear] = useState(true);
 
-  // const handleClickShow = () => {
-  //   setIsNavigationLinksDisplay(true);
-  //   console.log("message");
-  // };
+  const handleClickShow = () => {
+    setIsNavigationLinksDisplay(false);
+    setHamburgerDisplay(true);
+    setCloseButton(true);
+    setBackgroundColor(false);
+    setTextContainerAppear(false);
+  };
+
+  const handleClickShow2 = () => {
+    setIsNavigationLinksDisplay(true);
+    setHamburgerDisplay(false);
+    setCloseButton(false);
+    setBackgroundColor(true);
+    setTextContainerAppear(true);
+  };
   return (
     <div>
-      <header className="navigation-bar">
+      <header
+        className={backgroundColor ? "navigation-bar" : "navigationBarBlack"}
+      >
         <nav>
           {/* header container */}
           <div className="header-container">
@@ -28,19 +45,29 @@ const Header = () => {
               </div>
               <div className="navigation-icons-container">
                 <svg
-                  className="hamburger"
+                  className={HamburgerDisplay ? "hamburger" : "hamburgerAppear"}
                   width="24"
                   height="16"
-                  onClick={() =>
-                    setIsNavigationLinksDisplay(
-                      !isDisplayNavigationLinksDisplay
-                    )
-                  }
+                  onClick={handleClickShow}
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <g fill="#FFF" fillRule="evenodd">
                     <path d="M0 0h24v2H0zM0 7h24v2H0zM0 14h24v2H0z" />
                   </g>
+                </svg>
+                <svg
+                  width="20"
+                  height="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className={closeButton ? "closeButton" : "closeButtonAppear"}
+                  onClick={handleClickShow2}
+                >
+                  <path
+                    d="M17.778.808l1.414 1.414L11.414 10l7.778 7.778-1.414 1.414L10 11.414l-7.778 7.778-1.414-1.414L8.586 10 .808 2.222 2.222.808 10 8.586 17.778.808z"
+                    fill="#FFF"
+                    className="close-Hamburger"
+                    fill-rule="evenodd"
+                  />
                 </svg>
               </div>
             </div>
@@ -72,6 +99,17 @@ const Header = () => {
             </ul>
           </div>
         </nav>
+        <div className="box-container">
+          <div className="text-container">
+            <p
+              className={
+                textContainerAppear ? "headerText" : "headerTextDisappear"
+              }
+            >
+              Immersive experiences that deliver
+            </p>
+          </div>
+        </div>
       </header>
     </div>
   );
