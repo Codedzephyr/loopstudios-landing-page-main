@@ -153,60 +153,37 @@ div.navigation-icons-container {
 }
 
 /* second section */
-.MiddleSection {
+#middleSection {
   width: 100%;
+  padding: 6rem 0;
 }
 
-.OverallContainer {
+#middleSection .container {
   width: 100%;
-  padding: 3.75rem 0;
-  display: grid;
-  place-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
-.containerForImage {
-  width: 85%;
+#middleSection .wrapper {
+  width: 100%;
   display: flex;
+  align-items: flex-end;
 }
 
-.background-image {
-  /* position: relative; */
-  z-index: 5;
-  flex: 1;
+#middleSection .image {
+  flex: 3;
 }
 
-.TextContentContainer {
-  flex: 1;
-  /* display: grid;
-  place-items: center; */
-  position: relative;
-}
-
-.image-container {
+#middleSection .image img {
   width: 100%;
 }
 
-.desktop {
-  width: 620px
-}
-
-.mobile {
-  display: none;
-}
-
-.textContainer {
-  position: absolute;
-  left: -140px;
-  width: min(600px, 90%);
-  bottom: 4px;
-  display: grid;
-  place-items: center;
-  z-index: 20;
-  background-color: var(--white);
-}
-
-.clatter {
-  width: min(500px, 90%);
+#middleSection .textContent {
+  flex: 2;
+  padding: 3rem 3rem 0rem 3rem;
+  position: relative;
+  left: -10rem;
+  background-color: #fff;
 }
 
 .title {
@@ -220,7 +197,7 @@ div.navigation-icons-container {
 
 .titleDescription {
   font-family: "Alata", sans-serif;
-  font-size: Clamp(0.2rem, 5vw, 0.9rem);
+  font-size: Clamp(1.0625rem, 5vw, 0.9rem);
   padding-top: 1rem;
   line-height: 1.5;
   font-weight: var(--fontWeight4);
@@ -246,14 +223,8 @@ div.navigation-icons-container {
   .headerTextDisappear {
     display: none;
   }
-
-  .desktop {
-    display: none;
-  }
-
-  .mobile {
-    display: block;
-    width: 100%;
+  #middleSection .wrapper {
+    flex-direction: column;
   }
   .nav-links {
     display: none;
@@ -266,6 +237,10 @@ div.navigation-icons-container {
   .nav-links-mobile {
     flex-direction: column;
     padding-top: 10rem;
+  }
+
+  #middleSection .textContent {
+    left: 0rem;
   }
 
   .hamburgerAppear {
