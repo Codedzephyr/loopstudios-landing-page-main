@@ -159,7 +159,7 @@ div.navigation-icons-container {
 }
 
 #middleSection .container {
-  width: 100%;
+  width: 90%;
   max-width: 1280px;
   margin: 0 auto;
 }
@@ -202,6 +202,141 @@ div.navigation-icons-container {
   line-height: 1.5;
   font-weight: var(--fontWeight4);
   color: var(--VeryDarkGray);
+}
+
+/* third Section */
+#thirdSection {
+  width: 90%;
+  max-width: 1280px;
+  padding: 5rem 0;
+  margin: 0 auto;
+}
+
+.leftContent {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: Clamp(2.5rem, 5vw, 2.7rem);
+  color: var(--black);
+  display: inline-block;
+  margin-bottom: 0.3rem;
+  font-weight: var(--fontWeight3);
+  text-transform: uppercase;
+}
+
+.buttonSeeDesktop {
+  float: right;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 0.7em 2.5em;
+  letter-spacing: 4px;
+  cursor: pointer;
+  background-color: var(--white);
+  border: 1px solid black;
+  font-weight: var(--fontWeight4);
+  text-transform: uppercase;
+  font-size: Clamp(0.8rem, 5vw, 0.9rem);
+}
+
+.gridImageContainer {
+  display: grid;
+  margin: 2rem 0rem;
+  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 600px);
+}
+
+.one {
+  background-image: url(../images/desktop/image-deep-earth.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+}
+
+p.gridImageText {
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  color: var(--white);
+  margin-left: 3rem;
+  margin-bottom: 2.9rem;
+  font-weight: var(--fontWeight3);
+  font-size: Clamp(2.3rem, 5vw, 2.5rem);
+}
+
+p.gridImageText6 {
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  color: var(--white);
+  margin-left: 2rem;
+  margin-bottom: 2.9rem;
+  font-weight: var(--fontWeight3);
+  font-size: Clamp(2.3rem, 5vw, 2.5rem);
+}
+
+p.gridImageText7 {
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  color: var(--white);
+  margin-left: 2rem;
+  margin-bottom: 2.9rem;
+  font-weight: var(--fontWeight3);
+  font-size: Clamp(2.3rem, 5vw, 2.5rem);
+}
+
+
+
+.two {
+  background-image: url(../images/desktop/image-night-arcade.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+}
+
+.three {
+  background-image: url(../images/desktop/image-soccer-team.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+}
+
+.four {
+  background-image: url(../images/desktop/image-grid.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+}
+
+.five {
+  background-image: url(../images/desktop/image-from-above.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+}
+
+.six {
+  background-image: url(../images/desktop/image-pocket-borealis.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+}
+
+.seven {
+  background-image: url(../images/desktop/image-curiosity.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+}
+
+.eight {
+  background-image: url(../images/desktop/image-fisheye.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
 }
 
 /* for tablet and mobile phones */
@@ -300,8 +435,89 @@ div.navigation-icons-container {
     text-align: center;
   }
 
+  .leftContent {
+    text-align: center;
+    display: block;
+  }
+
   .title {
     text-align: center;
     padding-top: 0.5em;
+  }
+
+  .buttonSeeDesktop {
+    display: none;
+  }
+
+  p.gridImageText {
+    margin-bottom: 1rem;
+    margin-left: 1.5rem;
+  }
+}
+
+/* for grid */
+@media only screen and (max-width: 768px) {
+  .gridImageContainer {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 200px);
+  }
+  .one {
+    background-image: url(../images/mobile//image-deep-earth.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+  }
+  .two {
+    background-image: url(../images/mobile/image-night-arcade.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+  }
+  .three {
+    background-image: url(../images/mobile/image-soccer-team.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .four {
+    background-image: url(../images/mobile/image-grid.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .five {
+    background-image: url(../images/mobile/image-from-above.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+  }
+  .six {
+    background-image: url(../images/mobile/image-pocket-borealis.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+  }
+  .seven {
+    background-image: url(../images/mobile/image-curiosity.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .eight {
+    background-image: url(../images/mobile/image-fisheye.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
   }
 }
