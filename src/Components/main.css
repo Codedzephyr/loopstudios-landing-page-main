@@ -357,6 +357,7 @@ p.gridImageText7 {
   letter-spacing: 4px;
   cursor: pointer;
   background-color: var(--white);
+  color: var(--black);
   border: 1px solid black;
   font-weight: var(--fontWeight4);
   text-transform: uppercase;

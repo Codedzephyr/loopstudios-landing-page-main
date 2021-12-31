@@ -1,3 +1,75 @@
+# Frontend Mentor - Loopstudios landing page solution
+
+This is a solution to the [Loopstudios landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+
+## Table of contents
+
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+- [Author](#author)
+
+## Overview
+
+### The challenge
+
+Users should be able to:
+
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
+
+### Screenshot
+![](./src/images/screenshot.png)
+
+
+
+### Links
+- Solution URL: [Github Repository](https://github.com/Codedzephyr/loopstudios-landing-page-main)
+- Live Site URL: [Live Site URL](https://angry-darwin-b4d374.netlify.app/)
+
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+
+
+### What I learned
+
+```css
+.gridImageContainer {
+  display: grid;
+  margin: 2rem 0rem 5rem 0rem;
+  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 600px);
+}
+
+.gridImageContainer {
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(8, 200px);
+}
+```
+
+If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+
+**Note: Delete this note and the content within this section and replace with your own learnings.**
+
+## Author
+
+- Website - [Salihu Andulhamid](https://infallible-pike-a0b433.netlify.app/)
+- Frontend Mentor - [@Codedzephyr](https://www.frontendmentor.io/profile/Codedzephyr)
+- Twitter - [@dimah](https://www.twitter.com/_Dimah__)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
