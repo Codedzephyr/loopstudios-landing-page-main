@@ -30,7 +30,7 @@ const ThirdSection = () => {
           </p>
         </div>
         <div className="five">
-          <p className="gridImageText">
+          <p className="gridImageText5">
             from up <br /> above vr
           </p>
         </div>
@@ -49,6 +49,9 @@ const ThirdSection = () => {
             make it <br /> fisheye
           </p>
         </div>
+      </div>
+      <div className="centerButtonContainer">
+        <button className="buttonSeeMobile">see all</button>
       </div>
     </section>
   );

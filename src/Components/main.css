@@ -237,7 +237,7 @@ div.navigation-icons-container {
 
 .gridImageContainer {
   display: grid;
-  margin: 2rem 0rem;
+  margin: 2rem 0rem 5rem 0rem;
   gap: 30px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 600px);
@@ -256,6 +256,16 @@ p.gridImageText {
   font-family: "Josefin Sans", sans-serif;
   color: var(--white);
   margin-left: 3rem;
+  margin-bottom: 2.9rem;
+  font-weight: var(--fontWeight3);
+  font-size: Clamp(2.3rem, 5vw, 2.5rem);
+}
+
+p.gridImageText5 {
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  color: var(--white);
+  margin-left: 2rem;
   margin-bottom: 2.9rem;
   font-weight: var(--fontWeight3);
   font-size: Clamp(2.3rem, 5vw, 2.5rem);
@@ -280,8 +290,6 @@ p.gridImageText7 {
   font-weight: var(--fontWeight3);
   font-size: Clamp(2.3rem, 5vw, 2.5rem);
 }
-
-
 
 .two {
   background-image: url(../images/desktop/image-night-arcade.jpg);
@@ -339,6 +347,113 @@ p.gridImageText7 {
   align-items: flex-end;
 }
 
+.centerButtonContainer {
+  display: none;
+}
+
+.buttonSeeMobile {
+  font-family: "Josefin Sans", sans-serif;
+  padding: 0.7em 2.5em;
+  letter-spacing: 4px;
+  cursor: pointer;
+  background-color: var(--white);
+  border: 1px solid black;
+  font-weight: var(--fontWeight4);
+  text-transform: uppercase;
+  font-size: Clamp(0.8rem, 5vw, 0.9rem);
+}
+
+div.overallContainer {
+  width: 100%;
+  background-color: var(--black);
+}
+
+div.footerContainer {
+  width: 90%;
+  max-width: 1280px;
+  padding: 5rem 0;
+  margin: 0 auto;
+}
+
+.footerTopContainer {
+  display: flex;
+}
+
+.footerBrandContainer {
+  flex: 1;
+}
+
+.footerSocialContainer {
+  flex: 1;
+}
+
+div.socialIcons {
+  float: right;
+}
+
+div.socialIcons > svg {
+  margin: 0rem 0.5rem;
+}
+
+div.footerBottomContainer {
+  display: flex;
+}
+
+div.footerLinkContainer {
+  flex: 1;
+}
+
+div.footerCopyrightContainer {
+  flex: 1;
+  display: flex;
+}
+
+div.mobileSocialIcons {
+  flex: 1;
+  display: none;
+}
+
+div.textContainer {
+  flex: 1;
+}
+
+p.copyrightText {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: var(--fontWeight3);
+  color: var(--white);
+  font-size: var(--fontSize);
+  float: right;
+  margin-top: 1.2rem;
+}
+
+ul.footerLinks {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: var(--fontWeight3);
+  color: var(--white);
+  font-size: var(--fontSize);
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+li.footer-links-item {
+  list-style: none;
+  margin-right: 0.9rem;
+  margin-top: 1.2rem;
+}
+
+li.footer-links-item > a {
+  color: var(--white);
+  font-size: var(--fontSize);
+  text-decoration: none;
+  font-weight: var(--fontWeight4);
+}
+
+li.footer-links-item > a:hover {
+  text-decoration: white;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
 /* for tablet and mobile phones */
 @media screen and (max-width: 768px) {
   nav {
@@ -355,12 +470,15 @@ p.gridImageText7 {
     display: block;
     background-color: var(--black);
   }
+
   .headerTextDisappear {
     display: none;
   }
+
   #middleSection .wrapper {
     flex-direction: column;
   }
+
   .nav-links {
     display: none;
   }
@@ -406,12 +524,15 @@ p.gridImageText7 {
     font-weight: var(--fontWeight4);
     letter-spacing: 2px;
   }
+
   div.logo-container {
     width: 100%;
   }
+
   div.header-container {
     margin-top: 1.4rem;
   }
+
   svg.hamburger {
     margin-top: 0.4rem;
   }
@@ -452,6 +573,52 @@ p.gridImageText7 {
   p.gridImageText {
     margin-bottom: 1rem;
     margin-left: 1.5rem;
+  }
+
+  .centerButtonContainer {
+    margin: 4rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  div.footerSocialContainer {
+    display: none;
+  }
+
+  div.footerBrandContainer {
+    text-align: center;
+  }
+
+  div.footerLinkContainer {
+    text-align: center;
+    margin-top: 0.9rem;
+  }
+
+  p.copyrightText {
+    float: none;
+    text-align: center;
+  }
+
+  div.footerBottomContainer {
+    flex-direction: column;
+  }
+
+  ul.footerLinks {
+    flex-direction: column;
+  }
+
+  div.mobileSocialIcons {
+    display: block;
+    text-align: center;
+    margin: 1.5rem 0 0.9rem 0;
+  }
+
+  div.mobileSocialIcons > svg {
+    margin: 0rem 0.5rem;
+  }
+
+  div.footerCopyrightContainer {
+    flex-direction: column;
   }
 }
 
